@@ -16,9 +16,9 @@ const Insights = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Insight" textStyles="text-center" />
-      <TitleText title={<>Insight about metaverse</>} textStyles="text-center" />
-      <div className="mt-[50px] flex flex-row gap-[30px]">
+      <TypingText title="| What I Use" textStyles="text-center" />
+      <TitleText title={<>Skills, Tools & Platforms</>} textStyles="text-center" />
+      <div className="mt-[50px] flex flex-row flex-wrap justify-center gap-[30px]">
         {insights.map((item, index) => (
           <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}

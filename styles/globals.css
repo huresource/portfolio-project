@@ -13,10 +13,10 @@
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
+    hsl(209, 40%, 61%) 0%,
+    hsl(200, 70%, 73%) 26%,
+    hsl(193, 69%, 86%) 39%,
+    hsl(201, 52%, 94%) 50%,
     hsl(215deg 77% 81%) 61%,
     hsl(221deg 73% 70%) 74%,
     hsl(220deg 76% 51%) 100%
@@ -27,9 +27,10 @@
 .hero-gradient {
   background: linear-gradient(
     97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
+    #83b5e7 0%,
+    #284e74 20%,
+    #284e74 80%,
+    #83b5e7 100%
   );
 }
 
@@ -40,7 +41,7 @@
   top: 0px;
   right: 0px;
 
-  background: #7aebfb;
+  background: #b7ddff;
   filter: blur(190px);
 }
 
@@ -59,7 +60,7 @@
   left: 20%;
   top: 5%;
 
-  background: rgba(149, 66, 232, 0.35);
+  background: rgba(145, 199, 247, 0.867);
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
@@ -71,7 +72,7 @@
   left: 30%;
   top: 10%;
 
-  background: rgba(45, 72, 152, 0.75);
+  background: #1869b0d4;
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
@@ -91,8 +92,8 @@
   left: 0px;
   top: 0px;
 
-  background: #8d39a3;
-  filter: blur(175px);
+  background: #d8e3ee;
+  filter: blur(130px);
 }
 
 .footer-gradient {
