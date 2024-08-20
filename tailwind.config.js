@@ -18,6 +18,9 @@ module.exports = {
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
       },
+      boxShadow: {
+        'myShadow': '0 0px 9px 3px rgb(255 255 255 / 41%)',
+      },
     },
   },
   plugins: [],

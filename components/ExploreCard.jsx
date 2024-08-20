@@ -19,7 +19,7 @@ const ExploreCard = ({ id, imgUrl, websiteLink, title, description, index, activ
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
     {active !== id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] w-full text-left text-clip">
+      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0] w-full text-left text-nowrap pl-6">
         {title}
       </h3>
     ) : (
@@ -31,7 +31,7 @@ const ExploreCard = ({ id, imgUrl, websiteLink, title, description, index, activ
         <a
           href={websiteLink}
           target='_blank'
-          className={`${styles.flexCenter} w-[30px] h-[30px] rounded-[24px] glassmorphism`}
+          className={`${styles.flexCenter} w-[30px] h-[30px] rounded-[24px] glassmorphism hover:shadow-myShadow hover:scale-105 ease-in duration-300`}
         >
           <img
             src="/arrow.svg"
