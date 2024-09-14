@@ -1,16 +1,17 @@
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Projects, Feedback, GetStarted, TitlesSection, Hero, Skills, WhatsNew, World } from '../sections';
 
 const Page = () => (
   <div>
     <Navbar />
     <Hero />
     <About />
-    <Explore />
+    <Projects />
     <GetStarted />
+    <TitlesSection />
     <WhatsNew />
     <World />
-    <Insights />
+    <Skills />
     <Feedback />
     <Footer />
   </div>

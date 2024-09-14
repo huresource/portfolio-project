@@ -1,23 +1,24 @@
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Projects, Feedback, GetStarted, Hero, TitlesSection, Skills, WhatsNew, World } from '../sections';
 
 const Home = () => (
   <div className="bg-my-bg overflow-hidden">
     <Navbar />
     <Hero />
     <div className="relative">
-      <About />
+      <About />      
       <div className="gradient-03 z-0" />
-      <Explore />
+      <TitlesSection />
     </div>
-    {/* <div className="relative">
-      <GetStarted />
+    <div className="relative">
+      <Projects />
+      {/* <GetStarted /> */}
       <div className="gradient-04 z-0" />
       <WhatsNew />
-    </div> */}
+    </div>
 
     <div className="relative">
-      <Insights />
+      <Skills />
       <div className="gradient-04 z-0" />
       <Feedback />
     </div>

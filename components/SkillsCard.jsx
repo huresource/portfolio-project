@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '../utils/motion';
 
-const InsightCard = ({ imgUrl, title, subtitle, index }) => (
+const SkillsCard = ({ imgUrl, title, subtitle, index }) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.2, 1)}
     className="md:w-[220px] w-full h-[200px] rounded-[32px] py-3 px-3 table text-[6em] border text-white text-center align-middle"
@@ -14,4 +14,4 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   </motion.div>
 );
 
-export default InsightCard;
+export default SkillsCard;

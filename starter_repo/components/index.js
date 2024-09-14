@@ -1,9 +1,10 @@
 import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
-import ExploreCard from './ExploreCard';
+import ProjectCard from './ProjectCard';
 import StartSteps from './StartSteps';
+import Titles from './Titles';
 import NewFeatures from './NewFeatures';
-import InsightCard from './InsightCard';
+import SkillsCard from './SkillsCard';
 import Footer from './Footer';
 
 export {
@@ -11,8 +12,9 @@ export {
   TitleText,
   TypingText,
   StartSteps,
+  Titles,
   NewFeatures,
-  ExploreCard,
-  InsightCard,
+  ProjectCard,
+  SkillsCard,
   Footer,
 };

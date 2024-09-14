@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { insights } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { InsightCard, TitleText, TypingText } from '../components';
+import { SkillsCard, TitleText, TypingText } from '../components';
 
-const Insights = () => (
+const Skills = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -20,11 +20,11 @@ const Insights = () => (
       <TitleText title={<>Skills, Tools & Platforms</>} textStyles="text-center" />
       <div className="mt-[50px] flex flex-row flex-wrap justify-center gap-[30px]">
         {insights.map((item, index) => (
-          <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
+          <SkillsCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
       </div>
     </motion.div>
   </section>
 );
 
-export default Insights;
+export default Skills;

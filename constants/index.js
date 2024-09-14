@@ -63,6 +63,14 @@ export const startingFeatures = [
   'No need to beat around the bush, just stay on the gas and have fun',
 ];
 
+
+export const listOfTitles = [
+  'Freelancer',
+  'Ecommerce manager',
+  'Website creator',
+  'Philosopher'
+];
+
 export const newFeatures = [
   {
     imgUrl: '/vrpano.svg',
