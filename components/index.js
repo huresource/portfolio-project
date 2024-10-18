@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import { TypingText, TitleText } from './CustomTexts';
+import { TypingText, TitleText, HeaderText } from './CustomTexts';
 import ProjectCard from './ProjectCard';
 import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
@@ -11,6 +11,7 @@ export {
   Navbar,
   TitleText,
   TypingText,
+  HeaderText,
   StartSteps,
   Titles,
   NewFeatures,

@@ -1,3 +1,5 @@
+import { animate } from "framer-motion";
+
 export const navVariants = {
   hidden: {
     opacity: 0,
@@ -122,6 +124,24 @@ export const planetVariants = (direction) => ({
   },
 });
 
+export const repeatAnim = (type, repeat, repeatDelay, duration) => ({
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type,
+      repeat,
+      duration,
+      repeatDelay,
+      ease: 'backInOut',
+    },
+  },
+});
+
 export const zoomIn = (delay, duration) => ({
   hidden: {
     scale: 0,
@@ -138,6 +158,7 @@ export const zoomIn = (delay, duration) => ({
     },
   },
 });
+
 
 export const footerVariants = {
   hidden: {

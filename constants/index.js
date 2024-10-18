@@ -65,10 +65,24 @@ export const startingFeatures = [
 
 
 export const listOfTitles = [
-  'Freelancer',
+  {
+    id: 'title-1',
+    title: 'Ecommerce manager',
+  },
+  {
+    id: 'title-2',
+    title: 'Bubble.io developer',
+  },
+  {
+    id: 'title-3',
+    title: 'Website creator',
+  }
+];
+
+export const arrayOfTitles = [
   'Ecommerce manager',
-  'Website creator',
-  'Philosopher'
+  'Bubble.io developer',
+  'Website creator'
 ];
 
 export const newFeatures = [

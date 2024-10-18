@@ -5,10 +5,10 @@ const Page = () => (
   <div>
     <Navbar />
     <Hero />
-    <About />
+    {/* <About /> */}
     <Projects />
     <GetStarted />
-    <TitlesSection />
+    {/* <TitlesSection /> */}
     <WhatsNew />
     <World />
     <Skills />

@@ -26,3 +26,17 @@ export const TitleText = ({ title, textStyles }) => (
     {title}
   </motion.h2>
 );
+
+export const HeaderText = ({ title, textStyles }) => (
+  <motion.h5
+    variants={textContainer}
+    className={`font-normal text-[26px] text-white ${textStyles}`}
+  >
+    {Array.from(title).map((letter, index) => (
+      <motion.span variants={textVariant2} key={index}>
+        {letter === ' ' ? '\u00A0' : letter}
+      </motion.span>
+    ))}
+  </motion.h5>
+);
+

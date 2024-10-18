@@ -4,47 +4,38 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { listOfTitles } from '../constants';
-import { Titles, TitleText, TypingText } from '../components';
+import { Titles, TitleText, TypingText, HeaderText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
 const MyTitles = () => (
-  <section className={`${styles.paddings} relative z-10`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
-    >
-      <motion.div
-        variants={planetVariants('left')}
-        className={`flex-1 ${styles.flexCenter}`}
-      >
-        <img
-          src="/get-started.png"
-          alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
-        />
-      </motion.div>
-      <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
-      >
-        <TypingText title="| How Metaversus Works" />
-        <TitleText title={<>Get started with just a few clicks</>} />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
 
-                {listOfTitles.map((feature, index) => (
-                    <Titles
-                    key={feature}
-                    {...feature}
-                    number={`${index < 10 ? '0' : ''} ${index + 1}`}
-                    text={feature}
-                    />
-                ))}
+  <section className={`${styles.paddings}`}>
+  <motion.div
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
+  >
+    <TypingText title="| Projects" textStyles="text-center" />
+    <motion.p
+        variants={fadeIn('up', 'tween', 0.2, 1)}
+        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+      >
+        A <span className="font-extrabold text-white">freelancer </span> 
+        based out of <span className="font-extrabold text-white">Denver, Colorado</span>.
+      </motion.p>
+    <div className="mt-[50px] flex lg:flex-row flex-col w-full gap-[24px]">
+          {listOfTitles.map((title, index) => (
+              <Titles
+              key={title}
+              {...title}
+              index={index}
+              number={`${index < 10 ? '0' : ''} ${index + 1}`}
+              />
+          ))}
+       </div>
 
-        </div>
-      </motion.div>
     </motion.div>
   </section>
 );

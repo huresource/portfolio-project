@@ -5,11 +5,11 @@ const Home = () => (
   <div className="bg-my-bg overflow-hidden">
     <Navbar />
     <Hero />
-    <div className="relative">
+    {/* <div className="relative">
       <About />      
       <div className="gradient-03 z-0" />
       <TitlesSection />
-    </div>
+    </div> */}
     <div className="relative">
       <Projects />
       {/* <GetStarted /> */}
